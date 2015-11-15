@@ -10,7 +10,6 @@ output: html_document
 Reading data from excel
 
 ```{r}
-setwd("~/Documents/MOOCDataScience/Reproduce")
 mydata <- read.csv("activity.csv")
 ```
 
@@ -21,7 +20,7 @@ summary(mydata)
 ```
 
 
-```{r}
+```{r,echo=FALSE}
 CompleteData<-complete.cases(mydata)  
 # number of missing data 
 nMissingData <- length(CompleteData[CompleteData==FALSE])  
